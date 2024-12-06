@@ -8,3 +8,4 @@ a PC and the microcontroller system.
 The PC is the client and the microcontroller system is the server.
 Two LEDs (LED A and LED B) are connected to the microcontroller system. These LEDs are toggled
 remotely by entering commands on the PC. The HTTP protocol is used in the project
+![LED-Control](https://github.com/user-attachments/assets/2fcad222-0716-439e-8ada-5b28e4429e9b)
