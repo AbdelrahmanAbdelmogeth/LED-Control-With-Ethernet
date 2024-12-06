@@ -4,14 +4,14 @@ WEB BROWSER BASED ETHERNET CONTROL PROJECT
 This project shows how the ETHERNET can be used in microcontroller based projects. In this
 project a Serial Ethernet Board (www.mikroe.com) is connected to the EasyPIC V7 development
 board.
-The project uses the Web Browser method to establish Ethernet based communica걇n between
+The project uses the Web Browser method to establish Ethernet based communica혖on between
 a PC and the microcontroller system.
 The PC is the client and the microcontroller system is the server.
 Two LEDs (LED A and LED B) are connected to the microcontroller system. These LEDs are toggled
 remotely by entering commands on the PC. The HTTP protocol is used in the project
-Author: Dogan Ibrahim
-Date: October, 2013
-File: MIKROC-ETHER.C
+Author: Abdelrahman Abdelmougeth
+Date: October, 2023
+File: Ethernet.C
 ***** ***********************************************************************/
 const char HTTPheader[] = "HTTP/1.1 200 OK\nContent-type:";
 const char HTTPMimeTypeHTML[] = "text/html\n\n";
@@ -29,14 +29,14 @@ value=\"TOGGLE LED A\"></td><td align=center bgcolor=Green> \
 <input name=\"TB\" type=\"submit\" value=\"TOGGLE LED B\"></td></tr>\
 </table></form></body></html>";
 //
-// Ethernet NIC interface defini걇ns
+// Ethernet NIC interface defini혖ons
 //
 sfr sbit SPI_Ethernet_Rst at RC0_bit;
 sfr sbit SPI_Ethernet_CS at RC1_bit;
 sfr sbit SPI_Ethernet_Rst_Direction at TRISC0_bit;
 sfr sbit SPI_Ethernet_CS_Direction at TRISC1_bit;
 //
-// Define Serial Ethernet Board MAC Address, and IP address to be used for the communica걇n
+// Define Serial Ethernet Board MAC Address, and IP address to be used for the communica혖on
 //
 unsigned char MACAddr[6] = {0x00, 0x14, 0xA5, 0x76, 0x19, 0x3f} ;
 unsigned char IPAddr[4] = {192,168,1,15};
@@ -84,7 +84,7 @@ void main()
   ANSELD = 0; // Configure PORTD as digital
   TRISD = 0; // Configure PORTD as output
   PORTD = 0;
-  SPI1_Init(); // Ini갵lize SPI module
+  SPI1_Init(); // Ini혖alize SPI module
   SPI_Ethernet_Init(MACAddr, IPAddr, 0x01); // Initialize Ethernet module
   while(1) // Do forever
   {
