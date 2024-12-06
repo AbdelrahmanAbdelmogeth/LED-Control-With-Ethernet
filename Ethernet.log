@@ -1,0 +1,16 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP18F45K22 -RA -LHF -GC -O11111114 -fo10 -N"F:\Embedded Systems Diploma\Books\MikroC PIC\Ethernet\Ethernet.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" -SP"F:\Embedded Systems Diploma\Books\MikroC PIC\Ethernet\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\uses\P18\" "Ethernet.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_SPI_c345d014.mcl" "__Lib_EthEnc28j60.mcl" "__Lib_EthEnc24j600.mcl"	 
+hint: 0	1139	Available RAM: 1515 [bytes], Available ROM: 32768 [bytes]	 
+diagnostics: 0	122	Compilation Started	P18F45K22.c
+diagnostics: 2776	123	Compiled Successfully	P18F45K22.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 172	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	Ethernet.c
+diagnostics: 93	123	Compiled Successfully	Ethernet.c
+diagnostics: 0	127	All files Compiled in 62 ms	 
+hint: 0	1144	Used RAM (bytes): 711 (47%)  Free RAM (bytes): 804 (53%)	Used RAM (bytes): 711 (47%)  Free RAM (bytes): 804 (53%)
+hint: 0	1144	Used ROM (bytes): 10852 (33%)  Free ROM (bytes): 21916 (67%)	Used ROM (bytes): 10852 (33%)  Free ROM (bytes): 21916 (67%)
+diagnostics: 0	125	Project Linked Successfully	Ethernet.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 2109 ms	 
+diagnostics: 0	129	Project 'Ethernet.mcppi' completed: 2359 ms	 
+diagnostics: 0	103	Finished successfully: 26 Nov 2023, 19:55:40	Ethernet.mcppi
